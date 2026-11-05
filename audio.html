@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audio & Headphones — Bhargav's Electronics Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="board-bg" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">BE</span>
+      <span class="brand-name">Bhargav's<em>Electronics</em></span>
+    </a>
+    <nav class="header-nav">
+      <span class="nav-status"><span class="dot"></span>Store online</span>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span class="sep">/</span>
+  <span class="current">Audio &amp; Headphones</span>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <div>
+      <p class="eyebrow">// module #003</p>
+      <h1 class="page-hero-title">Audio &amp; Headphones</h1>
+      <p class="page-hero-sub">Earbuds, over-ear headphones, portable speakers and home theatre sound — try before you buy at our in-store listening bar.</p>
+      <div class="page-hero-stats">
+        <div class="stat"><span class="stat-num">8</span><span class="stat-label">Models in stock</span></div>
+        <div class="stat"><span class="stat-num">ANC</span><span class="stat-label">Options available</span></div>
+        <div class="stat"><span class="stat-num">1 Yr</span><span class="stat-label">Warranty</span></div>
+      </div>
+    </div>
+    <div class="page-hero-media">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCKpLjhZ4BfNf7U3KhEhyjo7tt3O5mb2-E0Kvs5HqhuQ&s=10" alt="Headphones and speakers on display" loading="lazy">
+    </div>
+  </section>
+
+  <section class="product-section">
+    <div class="catalog-heading">
+      <p class="eyebrow">// available now</p>
+      <h2>Browse the range</h2>
+    </div>
+    <div class="product-grid" id="productGrid">
+      <!-- Injected by products.js -->
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Bhargav's Electronics Store — Kurnool, Andhra Pradesh</p>
+  <p class="footer-fine">Built component by component.</p>
+</footer>
+
+<script src="products.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => renderProducts("audio"));
+</script>
+</body>
+</html>

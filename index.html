@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhargav's Electronics Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="board-bg" id="boardBg" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-mark">BE</span>
+      <span class="brand-name">Bhargav's<em>Electronics</em></span>
+    </div>
+    <nav class="header-nav">
+      <span class="nav-status"><span class="dot"></span>Store online</span>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">// Kurnool's component &amp; gadget counter</p>
+      <h1 class="hero-title">Every circuit<br>starts <span class="accent">somewhere.</span></h1>
+      <p class="hero-sub">Bhargav's Electronics Store stocks the boards, batteries, screens and speakers behind everything you own. Pick a module below to browse.</p>
+      <a href="#catalog" class="hero-cta">Browse the catalog <span class="arrow">→</span></a>
+    </div>
+    <div class="hero-schematic" aria-hidden="true">
+      <img src="store.jpeg" width="680" height="460" alt ="Schematic illustration of a circuit board" loading="lazy" class="hero-schematic-img"/>
+      <svg class="hero-schematic-svg" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">   
+        <g class="trace-group">
+          <path d="M240 146 V60 H120" class="trace"/>
+          <path d="M240 146 V60 H360" class="trace"/>
+          <path d="M206 180 H40" class="trace"/>
+          <path d="M274 180 H440" class="trace"/>
+          <path d="M240 214 V300 H90" class="trace"/>
+          <path d="M240 214 V300 H390" class="trace"/>
+        </g>
+        <g class="nodes">
+          <circle cx="120" cy="60" r="5"/>
+          <circle cx="360" cy="60" r="5"/>
+          <circle cx="40" cy="180" r="5"/>
+          <circle cx="440" cy="180" r="5"/>
+          <circle cx="90" cy="300" r="5"/>
+          <circle cx="390" cy="300" r="5"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section class="catalog" id="catalog">
+    <div class="catalog-heading">
+      <p class="eyebrow">// select a module</p>
+      <h2>Shop by category</h2>
+    </div>
+
+    <div class="chip-grid" id="chipGrid">
+      <!-- Chips injected by script.js -->
+    </div>
+  </section>
+
+  <section class="catalog info-section" id="info">
+    <div class="catalog-heading">
+      <p class="eyebrow">// the store itself</p>
+      <h2>About &amp; contact</h2>
+    </div>
+
+    <div class="chip-grid chip-grid--info" id="infoGrid">
+      <!-- Chips injected by script.js -->
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Bhargav's Electronics Store — Kurnool, Andhra Pradesh</p>
+  <p class="footer-fine">Built component by component.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

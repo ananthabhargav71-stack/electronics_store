@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming & Consoles — Bhargav's Electronics Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="board-bg" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">BE</span>
+      <span class="brand-name">Bhargav's<em>Electronics</em></span>
+    </a>
+    <nav class="header-nav">
+      <span class="nav-status"><span class="dot"></span>Store online</span>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span class="sep">/</span>
+  <span class="current">Gaming &amp; Consoles</span>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <div>
+      <p class="eyebrow">// module #006</p>
+      <h1 class="page-hero-title">Gaming &amp; Consoles</h1>
+      <p class="page-hero-sub">Consoles, controllers, racing rigs and PC peripherals for casual players and competitive setups alike.</p>
+      <div class="page-hero-stats">
+        <div class="stat"><span class="stat-num">6</span><span class="stat-label">Products in stock</span></div>
+        <div class="stat"><span class="stat-num">4K</span><span class="stat-label">Gaming ready</span></div>
+        <div class="stat"><span class="stat-num">1 Yr</span><span class="stat-label">Warranty</span></div>
+      </div>
+    </div>
+    <div class="page-hero-media">
+      <img src="https://cdn.thewirecutter.com/wp-content/media/2023/05/gamingconsoles-2048px-00730-3x2-1.jpg?auto=webp&quality=75&crop=16:9,smart&width=1024" width="680" height="460" alt="Gaming console and controllers on display" loading="lazy">
+    </div>
+  </section>
+
+  <section class="product-section">
+    <div class="catalog-heading">
+      <p class="eyebrow">// available now</p>
+      <h2>Browse the range</h2>
+    </div>
+    <div class="product-grid" id="productGrid">
+      <!-- Injected by products.js -->
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Bhargav's Electronics Store — Kurnool, Andhra Pradesh</p>
+  <p class="footer-fine">Built component by component.</p>
+</footer>
+
+<script src="products.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => renderProducts("gaming"));
+</script>
+</body>
+</html>
